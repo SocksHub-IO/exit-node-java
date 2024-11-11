@@ -1,6 +1,5 @@
 package relay.protocol;
 
-import androidx.annotation.NonNull;
 import java.net.InetSocketAddress;
 import relay.exception.Socks5Exception;
 
@@ -78,7 +77,7 @@ public class Socks5 {
         return new InetSocketAddress(destinationAddress, destinationPort);
     }
 
-    private static @NonNull String addressToString(AddressType addressType,
+    private static String addressToString(AddressType addressType,
                                                byte[] destinationAddress,
                                                int destinationAddressSize) throws Socks5Exception {
 
